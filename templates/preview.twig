@@ -1,0 +1,9 @@
+
+        {% for image in images %}
+            <a class="preview" href="?id={{ image.id }}">
+                {# <img src="/images/{{ image.filename }}"><br/> #}
+                <img src="{{ image.filename }}"><br/>
+                {{ image.title }}
+            </a>
+        {% endfor %}
+   
